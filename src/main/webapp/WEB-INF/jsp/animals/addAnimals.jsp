@@ -3,7 +3,7 @@
 <jsp:include page="includes/header.jsp"/>
 
 <main>
-    <h2>Main Index Page</h2>
+    <h2>Add Animals Page</h2>
 </main>
 
 <jsp:include page="includes/footer.jsp"/>

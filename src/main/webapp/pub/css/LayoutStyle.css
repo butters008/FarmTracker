@@ -1,0 +1,29 @@
+:root{
+  --baseColor: #eeeeee;
+  --secondaryColor: #1b5e1e;
+  --attentionColor: #ff4841;
+  /*--overlayColor: rgba(255, 0, 0, 0.2);    */
+  --overlayColor: rgba(255, 248, 234, 0.05);
+  --actionColor: #00850b;
+  --whiteText: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  /* color: var(--whiteText); */
+}
+
+.LayoutBody{
+  background-color: var(--baseColor);
+}
+
+.LayoutHeader{
+  background-color: var(--secondaryColor);
+  height: 50px;
+}
+
+#siteLogo {
+  height: 50px;
+  width: 50px;
+}
+
+.LayoutNavigation{
+
+}
