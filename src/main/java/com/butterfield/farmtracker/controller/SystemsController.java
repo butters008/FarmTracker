@@ -44,7 +44,7 @@ public class SystemsController {
         type.setType_name(form.getType_name());
         typeDAO.save(type);
 
-        response.setViewName("systems/systems-dashboard");
+        response.setViewName("redirect:/systems/systems-dashboard");
         return response;
     }
 }
