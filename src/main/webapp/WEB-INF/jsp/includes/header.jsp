@@ -30,7 +30,7 @@ property="principal.username"/></strong></span>
     <nav id="LayoutNaivgation">
         <ul class="navULContainer">
             <li class="navButton"><a href="../index">Index</a></li>
-            <li class="navButton"><a href="../animals/addAnimals">Add Animal</a></li>
+            <li class="navButton"><a href="../animal/animal-dashboard">Add Animal</a></li>
             <%-- ADMIN TOOLS --%>
             <li class="navButton"><a href="../systems/systems-dashboard">Systems Dashboard</a></li>
         </ul>

@@ -3,14 +3,16 @@ package com.butterfield.farmtracker.database.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="sold")
+@Table(name="client")
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,4 +27,8 @@ public class Client {
 
     @Column(name = "type")
     private String type;
+
+    @OneToMany(mappedBy = "id", fetch = FetchType.LAZY)
+    @ToString.Exclude
+    private Set<Farm_Animals_Sold> soldClient;
 }

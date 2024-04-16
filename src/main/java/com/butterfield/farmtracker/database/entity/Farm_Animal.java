@@ -33,7 +33,7 @@ public class Farm_Animal {
     private String sex;
 
     @Column(name = "dead")
-    private Byte dead;
+    private Integer dead;
 
     // TODO: Might need to rework this or something, in-case cow was not sold.
     @Column(name = "sold")
@@ -42,10 +42,7 @@ public class Farm_Animal {
     @Column(name = "notes")
     private String note;
 
-    @OneToOne(mappedBy = "type", fetch = FetchType.LAZY)
-    private Set<Type> farm_animal_type;
-
-    @OneToMany(mappedBy = "sold", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "id", fetch = FetchType.LAZY)
     @ToString.Exclude
-    private Set<Farm_Animals_Sold> farm_animals_sold;
+    private Set<Farm_Animals_Sold> farm_animal;
 }

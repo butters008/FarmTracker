@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -23,4 +24,7 @@ public class Type {
 
     @Column(name = "type_name")
     private String type_name;
+
+/*    @OneToOne(mappedBy = "id", fetch = FetchType.LAZY)
+    private Set<Type> farm_animal_type;*/
 }
