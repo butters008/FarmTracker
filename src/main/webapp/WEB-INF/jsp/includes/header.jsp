@@ -6,6 +6,7 @@
   
     <!-- Version 2 Links -->
     <link rel="stylesheet" href="../pub/css/LayoutStyle.css">
+    <link rel="stylesheet" href="../pub/css/Animal_Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     <title>Farm Management System</title>

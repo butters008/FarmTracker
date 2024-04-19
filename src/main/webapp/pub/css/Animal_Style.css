@@ -1,0 +1,37 @@
+.Animal_Dashboard_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Animal_Dashboard_Inside{
+    display: flex;
+    flex-direction: row;
+}
+
+.Animal_Dashboard_Form h3{
+    text-align: center;
+}
+
+.Animal_Dashboard_Form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+    border: 3 solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: var(--attentionColor);
+}
+
+.Animal_Dashboard_Form form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.Animal_Dashboard_Form form div label{
+width: 75px;
+}
