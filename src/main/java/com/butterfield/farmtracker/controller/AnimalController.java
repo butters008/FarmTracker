@@ -22,10 +22,11 @@ public class AnimalController {
         List<Type> typeList = typeDAO.findAll();
         response.addObject("typeList", typeList);
 
+        for(int i = 0; i < typeList.size(); i++){
+            System.out.println(typeList.get(i));
+        }
+
         response.setViewName("animal/animal-dashboard");
-        System.out.println("Inside Animal Dashboard");
-
-
 
         return response;
     }

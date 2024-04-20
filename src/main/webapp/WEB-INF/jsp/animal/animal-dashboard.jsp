@@ -19,7 +19,11 @@
                 </div>
                 <div>
                     <label class="Animal_Dashboard_Form_Label">Type</label>
-                    <input type="Text" name="type" id="type" />
+                    <select name="type" id="type">
+                        <c:forEach items="${typeList}" var="type">
+                            <option>${type.type_name}</option>
+                        </c:forEach>
+                    </select>
                 </div>
                 <div>
                     <label class="Animal_Dashboard_Form_Label">Sex</label>
